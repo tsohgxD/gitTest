@@ -8,3 +8,5 @@ if os.path.isfile(file):
     print("The file exists.")
 else:
     print("The file does not exist")  
+    print("creating it...")
+    os.system("touch {}".format(file))
